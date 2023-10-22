@@ -10,7 +10,8 @@ public class Response {
     private String operationUid;  // Уникальный идентификатор операции
     private String systemTime;  // Время создания сообщения
     private Codes code;  // Код
-    private Double annualBonus;  // Годовой бонус
+    private Double annualBonus; // Годовая премия
+    private Double quarterlyBonus; // Квартальная премия
     private ErrorCodes errorCode;  // Код ошибки
     private ErrorMessages errorMessage;  // Сообщение об ошибке
 }
