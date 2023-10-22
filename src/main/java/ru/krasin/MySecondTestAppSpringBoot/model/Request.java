@@ -40,26 +40,6 @@ public class Request {
     private Integer smsCode;
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Request request = (Request) o;
-        return communicationId == request.communicationId &&
-                templateId == request.templateId &&
-                productCode == request.productCode &&
-                smsCode == request.smsCode &&
-                Double.compare(request.salary, salary) == 0 &&
-                Double.compare(request.bonus, bonus) == 0 &&
-                workDays == request.workDays &&
-                uid.equals(request.uid) &&
-                Objects.equals(operationUid, request.operationUid) &&
-                systemName == request.systemName &&
-                systemTime.equals(request.systemTime) &&
-                source.equals(request.source) &&
-                position == request.position;
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(uid, operationUid, systemName, systemTime,
                 source, position, salary, bonus, workDays, communicationId,
